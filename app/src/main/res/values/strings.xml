@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SettingsSample</string>
+    <string name="url">URL</string>
+    <string name="user">User Name</string>
+    <string name="language">Language</string>
+    <string name="category">Category</string>
+
+    <!-- category-->
+    <string name="category_syntax">Syntax</string>
+    <string name="category_ide">IDE</string>
+    <string name="category_editor">Editor</string>
+
+    <string-array name="languages">
+        <item>C</item>
+        <item>Java</item>
+        <item>Ruby</item>
+        <item>Swift</item>
+    </string-array>
+</resources>
