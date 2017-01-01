@@ -47,13 +47,10 @@ public class SettingsTest {
     private static final String DEFAULT_LANGUAGE = "C";
 
     private static final String KEY_CATEGORY_SYNTAX = "category_syntax";
-    private static final boolean DEFAULT_CATEGORY_SYNTAX = true;
 
     private static final String KEY_CATEGORY_IDE = "category_ide";
-    private static final boolean DEFAULT_CATEGORY_IDE = false;
 
     private static final String KEY_CATEGORY_EDITOR = "category_editor";
-    private static final boolean DEFAULT_CATEGORY_EDITOR = false;
 
     private MainActivity mActivity;
 
@@ -85,7 +82,7 @@ public class SettingsTest {
 
         // Set language
         onView(withId(R.id.spinner_lang)).perform(click());
-        onData(allOf(is(instanceOf(String.class)), is("C"))).perform(click());
+        onData(allOf(is(instanceOf(String.class)), is(DEFAULT_LANGUAGE))).perform(click());
 
         // Set category
         // syntax: true, ide: false, editor: false
