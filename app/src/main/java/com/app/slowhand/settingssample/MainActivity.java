@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.app.slowhand.settingssample.databinding.ActivityMainBinding;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends AppCompatActivity {
 
     private Settings mSettings;
     private ActivityMainBinding mBinding;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
         mSettings = new Settings(this);
         mBinding.setSettings(mSettings);
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 }
